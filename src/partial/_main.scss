@@ -30,6 +30,12 @@
 
 .read{
     background-color: $bg_section;
-    height: 180px;
+    height: 150px;
     padding: 0 50px;
+    .meth-read{
+        width: 20%;
+        padding: 40px 60px;
+        display: inline-block;
+        
+    }
 }

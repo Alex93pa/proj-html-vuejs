@@ -114,6 +114,11 @@ header .buy .last-book h3 {
 
 .read {
   background-color: #f3ece3;
-  height: 180px;
+  height: 150px;
   padding: 0 50px;
+}
+.read .meth-read {
+  width: 20%;
+  padding: 40px 60px;
+  display: inline-block;
 }
