@@ -1,0 +1,35 @@
+.about{
+    height: 500px;
+    padding: 50px 100px;
+    .more-tit{
+        color: $primary_color;
+        font-family: $authorFont;
+        text-align: center;
+        font-size: $primary_size;
+    }
+    .more-info{
+        font-family: $primary_font;
+        text-align: center;
+        font-size: 40px;
+        padding: 50px 0px;
+    }
+    .meet{
+        background-color: $button_color;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        &:hover{
+            background-color: $button_color_hover
+        }
+    }
+}
+
+.read{
+    background-color: $bg_section;
+    height: 180px;
+    padding: 0 50px;
+}

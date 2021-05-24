@@ -9,10 +9,11 @@
 
 header {
   background-image: url(/images/hero-07-2x.jpg?337dda28520e416071acab37f5e67a99);
-  height: 400px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100vh;
+  min-height: 600px;
+  width: 100vw;
+  max-width: 1600px;
+  background-size: cover;
 }
 header nav {
   display: flex;
@@ -22,16 +23,97 @@ header nav .logo {
 }
 header nav .logo img {
   display: inline-block;
-  height: 80px;
+  height: 150px;
   margin-left: 50px;
 }
 header nav ul {
   display: inline-block;
+  padding: 50px;
 }
 header nav ul li {
   display: inline-block;
   margin: 10px;
+  color: white;
 }
 header nav ul li a {
   text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  color: #e1aa40;
+  border-top: 4px solid #e1aa40;
+}
+header .author-name {
+  width: 55%;
+  display: inline-block;
+  float: left;
+  padding: 50px 100px;
+}
+header .author-name h1 {
+  font-family: "Kristi", cursive;
+  color: #e1aa40;
+  font-size: 60px;
+  font-weight: 500;
+}
+header .author-name p {
+  color: white;
+  font-size: 40px;
+  font-family: "DM Serif Display", serif;
+}
+header .author-name .NYT {
+  font-family: "DM Sans", sans-serif;
+  font-size: 35px;
+}
+header .buy {
+  width: calc(45%);
+  display: inline-block;
+  height: 300px;
+  background-color: white;
+  position: relative;
+}
+header .buy img {
+  display: inline;
+}
+header .buy .last-book {
+  display: inline-block;
+}
+header .buy .last-book h3 {
+  color: #e1aa40;
+}
+
+.about {
+  height: 500px;
+  padding: 50px 100px;
+}
+.about .more-tit {
+  color: #e1aa40;
+  font-family: "Kristi", cursive;
+  text-align: center;
+  font-size: 60px;
+}
+.about .more-info {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 0px;
+}
+.about .meet {
+  background-color: #3da698;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.about .meet:hover {
+  background-color: #027986;
+}
+
+.read {
+  background-color: #f3ece3;
+  height: 180px;
+  padding: 0 50px;
 }

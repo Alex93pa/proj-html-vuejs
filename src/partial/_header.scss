@@ -1,31 +1,75 @@
 header{
-    background-image: url("../../imgs/hero-07-2x.jpg");
-    height: 400px;
-    width: 100%;
-    object-fit: contain;
+    background-image: url(../../imgs/hero-07-2x.jpg);
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+    max-width: 1600px;
+    background-size: cover;   
     nav{
         display: flex;
         .logo{
-            flex-grow: 1;
-            
+            flex-grow: 1;            
             img{
                 display: inline-block;
-                height: 80px;
+                height: 150px;
                 margin-left: 50px;
             }
         }
         ul{
             display: inline-block;
-            
+            padding: 50px;
             li{
                 display: inline-block;
                 margin: 10px;
-                
+                color: white;
                 a{
                     text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    &:hover{
+                        color: $primary_color;
+                        border-top: 4px solid $primary_color;
+                    }
                 }
+
             }
         }
-
+    }
+    .author-name{
+        width: 55%;
+        display: inline-block;
+        float: left;
+        padding: 50px 100px;
+        h1{
+            font-family: $authorFont;
+            color: $primary_color;
+            font-size: $primary_size;
+            font-weight: 500;
+        }
+        p{
+            color: white;
+            font-size: 40px;
+            font-family: 'DM Serif Display', serif;
+        }
+        .NYT{
+            font-family: $primary_font;
+            font-size: 35px;
+        }
+    }
+    .buy{
+        width: calc(45%);
+        display: inline-block;
+        height: 300px;
+        background-color: white;
+        position: relative;
+        img{
+            display: inline;
+        }
+        .last-book{
+            display: inline-block;
+            h3{
+                color: $primary_color;
+            }
+        }
     }
 }
