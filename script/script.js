@@ -3,32 +3,49 @@ new Vue({
     el: "#app",
     data: {
         navbarLinks: [{
-            text: "home",
+            text: "Home",
             link: "#",
         },
         {
-            text: "contact",
+            text: "About Me",
             link: "#",
         },
         {
-            text: "contact",
+            text: "Testimonials",
             link: "#",
         },
         {
-            text: "dropdown",
+            text: "My Blog",
             link: "#",
-            icon: "fa-list",
-            childs: [
-                {
-                    text: "1",
-                    link:"#"
-                },
-                {
-                    text: "2",
-                    link:"#"
-                },
-            ]
         },
+        {
+            text: "Meetups",
+            link: "#",
+        },
+        {
+            text: "Shop",
+            link: "#",
+        },
+        {
+            text: "Contact Me",
+            link: "#",
+        },
+
+        // {
+        //     text: "dropdown",
+        //     link: "#",
+        //     icon: "fa-list",
+        //     childs: [
+        //         {
+        //             text: "1",
+        //             link:"#"
+        //         },
+        //         {
+        //             text: "2",
+        //             link:"#"
+        //         },
+        //     ]
+        // },
     
     
         ],

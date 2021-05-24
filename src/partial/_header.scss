@@ -1,0 +1,31 @@
+header{
+    background-image: url("../../imgs/hero-07-2x.jpg");
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    nav{
+        display: flex;
+        .logo{
+            flex-grow: 1;
+            
+            img{
+                display: inline-block;
+                height: 80px;
+                margin-left: 50px;
+            }
+        }
+        ul{
+            display: inline-block;
+            
+            li{
+                display: inline-block;
+                margin: 10px;
+                
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
