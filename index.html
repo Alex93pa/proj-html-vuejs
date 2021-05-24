@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    <!-- HEADER   -->
+        <header class="">
+            <nav>
+                <ul>
+                    <li v-for="el in navbarLinks">
+                        <a href="el.link" v-if="el.link">{{el.text}}</a> 
+
+                        <span v-else-if="el.icon" @click="onDDClick">
+                            <i class="fas" :class="el.icon"></i>
+                            <div class="dropdown" v-if="el.childs">
+                                <ul>
+                                    <li v-for="child in childs">
+                                        <a :href="childs.link" v-id="childs.link">
+                                            {{childs.text}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <!-- MAIN     -->
+        <main>
+            
+        </main>
+    <!-- FOOTER    -->
+        <footer class="">
+            <div>
+                <h3>twitter</h3>
+                <ul>
+                    <li v-for="tweet in footerData.twittData">
+                        <a href="tweet.link">
+                            {{tweet.text}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        
+        
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

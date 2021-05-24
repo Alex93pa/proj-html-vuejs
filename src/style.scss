@@ -6,9 +6,9 @@
     max-width: 1500px;
 }
 
-@import "partial/common";
-@import "partial/mixin";
 @import "partial/variables";
+@import "partial/mixin";
+@import "partial/common";
 @import "partial/header";
 @import "partial/main";
 @import "partial/footer";
