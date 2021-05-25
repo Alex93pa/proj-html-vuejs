@@ -39,3 +39,29 @@
         
     }
 }
+
+.banner{
+    height: 500px;
+    background-image: url(../../images/banner.jpg);
+    .banner-container{
+        width: 70%;
+        margin: auto;
+        .audible-app{
+            vertical-align: bottom;
+            display: inline-block;
+        }
+        .new-audio{
+            display: inline-block;
+            h2{
+                color: white;
+                font-family: $p_font;
+            }
+            h5{
+                color: $primary_color;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+}
