@@ -229,6 +229,33 @@ header .hero .buy .last-book h3 {
 .feedback .all-tweets .min-tweet .tweet .tweet-text {
   background-color: #f3ece3;
 }
+.feedback .all-tweets .min-tweet .tweet .tweet-text h2 {
+  font-family: "DM Serif Display", serif;
+}
 .feedback .all-tweets .min-tweet .tweet .tweet-text p {
   color: #bec6be;
+}
+
+footer {
+  background-image: url(/images/footer-3.jpg?598fdeb6c784cdc64b01f1fcc8220ef7);
+  height: 500px;
+  display: flex;
+}
+footer div {
+  width: 20%;
+  color: white;
+  padding: 10px;
+}
+footer div p {
+  margin: 15px 0;
+}
+footer div ul {
+  list-style: none;
+}
+footer div ul li {
+  margin: 15px 0;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: white;
 }

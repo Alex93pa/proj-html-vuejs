@@ -23,7 +23,7 @@
             
             <nav>
                 <div class="logo">
-                    <img src="images/author-logo-round-200x205.png" alt="">
+                    <img src="../../images/author-logo-round-200x205.png" alt="">
                 </div>
                 <ul>
                     <li v-for="el in navbarLinks">
@@ -171,13 +171,40 @@
                         </div>
                     </div>
                 </div>
-            </section>            
+            </section>  
 
+        <!-- fifth section -->
 
         </main>
     <!-- FOOTER    -->
-        <footer class="">
-            <div>
+        <footer>
+            <div class="footer-list">
+                <img src="../../images/author-logo-round-200x205.png" alt="">
+            </div>
+            <div class="footer-list">
+                <h3>ABOUT ME</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae a eveniet assumenda unde minus animi illum repellat iure. Autem voluptates atque perferendis provident doloremque repudiandae blanditiis culpa corrupti fuga.</p>
+            </div>
+            <div class="footer-list">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li v-for="text in footerLinks">
+                        <a href="text.link" v-if="text.link">{{text.text}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3>CONTACT INFO</h3>
+                <p>Via Roma, 3</p>
+                <p>Phone: (800)000-0000</p>
+                <p>Mobile: (800)000-0000</p>
+                <p>E-mail: info@author.com</p>
+
+            </div>
+
+
+
+            <!-- <div>
                 <h3>twitter</h3>
                 <ul>
                     <li v-for="tweet in footerData.twittData">
@@ -186,7 +213,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </footer>
         
         

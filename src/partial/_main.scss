@@ -133,6 +133,9 @@
             margin: 0 0 30px 0;
             .tweet-text{
                 background-color: $bg_section;
+                h2{
+                    font-family: $p_font;
+                }
                 p{
                     color: $text_color;
                 }

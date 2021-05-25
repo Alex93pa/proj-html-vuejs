@@ -2,7 +2,8 @@
 new Vue({
     el: "#app",
     data: {
-        navbarLinks: [{
+        navbarLinks: [
+        {
             text: "Home",
             link: "#",
         },
@@ -31,41 +32,29 @@ new Vue({
             link: "#",
         },
 
-    
-        ],
-        footerData: {
-            twittData: [
-                {
-                    text: "contact",
-                    link: "#",
-                },
-                {
-                    text: "contact",
-                    link: "#",
-                },
-            ],
-            links: [
-                {
-                    text: "contact",
-                    link: "#",
-                },
-                {
-                    text: "contact",
-                    link: "#",
-                },
-            ]
+    ],
+        footerLinks: [
+        {
+            text: "Latest Book",
+            link: "#",
+        },
+        {
+            text: "Upcoming Event",
+            link: "#",
+        },
+        {
+            text: "Recent Articles",
+            link: "#",
+        },
+        {
+            text: "Business Enquiries",
+            link: "#",
+        },
+        {
+            text: "Visit My Foundation",
+            link: "#",
+        },
+    ]
             
         },
-        dropdownOpen: false
-    },
-    methods: {
-        onDDClick(el) {
-            if (!el.child) {
-                return
-            }
-
-            this.dropdownOpen = !this.dropdownOpen
-        }
-    }
-
 })
