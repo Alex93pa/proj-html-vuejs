@@ -41,7 +41,6 @@ header{
         .author-name{
         flex: 1;
         display: inline-block;
-        float: left;
         padding: 50px 100px;
         h1{
             font-family: $authorFont;
@@ -73,6 +72,14 @@ header{
             display: inline-block;
             h3{
                 color: $primary_color;
+            }
+            button{
+                padding: 10px 20px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #51bfc7;
+                    border: none;
+                }
             }
         }
     }

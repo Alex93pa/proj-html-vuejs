@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Kristi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/style.css">
-    <title>Document</title>
+    <title>Author</title>
 </head>
 <body>
     <div id="app">
@@ -37,7 +37,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="hero clearfix">
+            <div class="hero">
                 <div class="author-name">
                     <h1>Damon Vaughn</h1>
                     <p>Best-selling author and the most influential public intellectual in the western world right now.</p>
@@ -51,6 +51,14 @@
                         </h3>
                         <h5>D. VAUGHN AUTOBIOGRAPHY</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque incidunt quam dolor blanditiis a voluptate debitis. Rem quibusdam in totam at, assumenda debitis hic cum magnam porro vero consectetur.</p>
+                        <button>
+                            <i class="fa fa-amazon" aria-hidden="true"></i>
+                            <span> Buy on Amazon</span>
+                        </button>
+                        <button>
+                            <i class="fa fa-apple" aria-hidden="true"></i>
+                            <span> Buy on AppStore</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -137,8 +145,9 @@
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam illum sint repudiandae consequuntur qui facere ab sed enim non nulla laudantium ipsam, natus similique odio excepturi. Quod minus molestiae dignissimos?
                             </p>
                             <p>
+                                <img src="../../images/nytimes-logo-white-xsmall.png" alt="">
                                 <b>
-                                    Mary Maxey, 
+                                      Justine Kilpatrick, 
                                 </b> The New York Times
                             </p>
                         </div>
@@ -151,7 +160,9 @@
                                 <h2>A True Masterpiece, Bravo!</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum quaerat aspernatur quae atque dolorem tenetur corporis mollitia impedit. Ducimus nulla sed quam rem? Natus veritatis molestias asperiores dolores ut.</p>
                             </div>
+                                <div class="triangle"></div>
                             <p>
+                                <img src="../../images/theguardian-xsmall.png" alt="">
                                 <b>
                                     Gerald Hendley, 
                                 </b> The Guardian
@@ -163,10 +174,13 @@
                                 <h2>A Unique View On The World</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum quaerat aspernatur quae atque dolorem tenetur corporis mollitia impedit. Ducimus nulla sed quam rem? Natus veritatis molestias asperiores dolores ut.</p>
                             </div>
+                            <div class="triangle"></div>
                                 <p>
+                                    <img src="../../images/globe-xsmall.png" alt="">
                                     <b>
                                         Mary Maxey, 
-                                    </b> The Globe And Mail
+                                    </b> 
+                                    The Globe And Mail
                                 </p>
                         </div>
                     </div>
@@ -174,7 +188,23 @@
             </section>  
 
         <!-- fifth section -->
+            <section class="events">
+                <div class="event-title">
+                    <h1>Upcoming Events</h1>
+                    <h4>MEET THE AUTHOR IN PERSON</h4>
+                </div>
+                <div class="event-list">
+                    <div class="event">
 
+                    </div>
+                    <div class="event">
+                        
+                    </div>
+                    <div class="event">
+                        
+                    </div>
+                </div>
+            </section>
         </main>
     <!-- FOOTER    -->
         <footer>
@@ -189,7 +219,9 @@
                 <h3>USEFUL LINKS</h3>
                 <ul>
                     <li v-for="text in footerLinks">
-                        <a href="text.link" v-if="text.link">{{text.text}}</a>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <a href="text.link" v-if="text.link">
+                             {{text.text}}</a>
                     </li>
                 </ul>
             </div>

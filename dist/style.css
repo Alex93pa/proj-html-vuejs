@@ -7,12 +7,6 @@
   margin: auto;
 }
 
-.clearfix {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 header {
   background-image: url(/images/hero-07-2x.jpg?337dda28520e416071acab37f5e67a99);
   height: 100vh;
@@ -57,7 +51,6 @@ header .hero {
 header .hero .author-name {
   flex: 1;
   display: inline-block;
-  float: left;
   padding: 50px 100px;
 }
 header .hero .author-name h1 {
@@ -90,9 +83,16 @@ header .hero .buy .last-book {
 header .hero .buy .last-book h3 {
   color: #e1aa40;
 }
+header .hero .buy .last-book button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+header .hero .buy .last-book button:hover {
+  background-color: #51bfc7;
+  border: none;
+}
 
 .about {
-  height: 500px;
   padding: 50px 100px;
 }
 .about .more-tit {
@@ -123,7 +123,6 @@ header .hero .buy .last-book h3 {
 
 .read {
   background-color: #f3ece3;
-  height: 150px;
   padding: 0 50px;
 }
 .read .meth-read {
@@ -167,7 +166,6 @@ header .hero .buy .last-book h3 {
 }
 
 .feedback {
-  height: 700px;
   padding: 50px 100px;
 }
 .feedback .critics {
@@ -176,6 +174,12 @@ header .hero .buy .last-book h3 {
 .feedback .critics .tit-critics {
   margin: 0;
   flex-grow: 1;
+}
+.feedback .critics .tit-critics h2 {
+  font-family: "DM Serif Display", serif;
+}
+.feedback .critics .tit-critics h5 {
+  margin: 10px 0;
 }
 .feedback .critics .btn {
   margin: 0 60px;
@@ -212,6 +216,10 @@ header .hero .buy .last-book h3 {
   font-size: 35px;
   margin: 20px;
 }
+.feedback .all-tweets .big-tweet .big-tw-text img {
+  width: 12px;
+  height: 100%;
+}
 .feedback .all-tweets .big-tweet .big-tw-text p {
   margin: 20px 0;
 }
@@ -228,12 +236,32 @@ header .hero .buy .last-book h3 {
 }
 .feedback .all-tweets .min-tweet .tweet .tweet-text {
   background-color: #f3ece3;
+  margin: 10px 0;
 }
 .feedback .all-tweets .min-tweet .tweet .tweet-text h2 {
   font-family: "DM Serif Display", serif;
 }
 .feedback .all-tweets .min-tweet .tweet .tweet-text p {
   color: #bec6be;
+  margin: 10px 0;
+}
+.feedback .all-tweets .min-tweet .tweet .triangle {
+  position: absolute;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #f3ece3 transparent transparent transparent;
+}
+
+.events {
+  padding: 50px;
+  background-color: #f3ece3;
+}
+.events h1 {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
 }
 
 footer {
