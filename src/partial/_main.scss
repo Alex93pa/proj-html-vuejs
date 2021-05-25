@@ -43,25 +43,101 @@
 .banner{
     height: 500px;
     background-image: url(../../images/banner.jpg);
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
     .banner-container{
-        width: 70%;
+        display: flex;
         margin: auto;
         .audible-app{
             vertical-align: bottom;
             display: inline-block;
         }
         .new-audio{
-            display: inline-block;
+            width: 45%;
             h2{
                 color: white;
                 font-family: $p_font;
             }
             h5{
                 color: $primary_color;
+                margin: 35px 0;
             }
             p{
                 color: white;
             }
+            img{
+                margin: 10px;
+            }
         }
     }
+}
+
+.feedback{
+    height: 700px;
+    padding: 50px 100px;
+    .critics{
+        display: flex;
+        .tit-critics{
+            margin: 0;
+            flex-grow: 1;
+        }
+        .btn{
+            margin: 0 60px;
+            button{
+                padding: 10px;
+                background-color: $primary_color;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #f3b329;
+                }
+            }
+        }
+    }
+    .all-tweets{
+        display: flex;
+        padding: 30px 0;
+        .big-tweet{
+            height: 550px;
+            width: 50%;
+            margin: 0;
+            background-size: cover;
+            background-image: url(../../images/testimonial2-2x.jpg);
+            border-bottom-right-radius: 85px;
+            .big-tw-text{
+                color: white;
+                padding: 25px;
+                h1{
+                    text-align: center;
+                    font-family: $p_font;
+                    font-size: 35px;
+                    margin: 20px;
+                }
+                p{
+                    margin: 20px 0;
+                }
+            }
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 100px rgba(0, 0, 0, 0.945);
+            
+        }
+    }
+    .min-tweet{
+        width: 40%;
+        height: 550px;
+        .tweet{
+            margin: 0 0 30px 0;
+            .tweet-text{
+                background-color: $bg_section;
+                p{
+                    color: $text_color;
+                }
+            }
+        }
+    }
+}
 }

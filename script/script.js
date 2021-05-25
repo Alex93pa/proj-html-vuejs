@@ -31,22 +31,6 @@ new Vue({
             link: "#",
         },
 
-        // {
-        //     text: "dropdown",
-        //     link: "#",
-        //     icon: "fa-list",
-        //     childs: [
-        //         {
-        //             text: "1",
-        //             link:"#"
-        //         },
-        //         {
-        //             text: "2",
-        //             link:"#"
-        //         },
-        //     ]
-        // },
-    
     
         ],
         footerData: {

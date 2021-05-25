@@ -29,18 +29,6 @@
                     <li v-for="el in navbarLinks">
                         <a href="el.link" v-if="el.link">{{el.text}}</a> 
 
-                        <!-- <span v-else-if="el.icon" @click="onDDClick">
-                            <i class="fas" :class="el.icon"></i>
-                            <div class="dropdown" v-if="el.childs">
-                                <ul>
-                                    <li v-for="child in childs">
-                                        <a :href="childs.link" v-id="childs.link">
-                                            {{childs.text}}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </span> -->
                     </li>
                     <li>
                         <a href="#">
@@ -49,7 +37,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="hero">
+            <div class="hero clearfix">
                 <div class="author-name">
                     <h1>Damon Vaughn</h1>
                     <p>Best-selling author and the most influential public intellectual in the western world right now.</p>
@@ -86,16 +74,16 @@
         <!-- second section -->
             <section class="read">
                 <div class="meth-read">
-                    <img src="../images/ebay-logotan-2x-200x66.png" alt="">
+                    <img src="../../images/ebay-logotan-2x-200x66.png" alt="">
                 </div>
                 <div class="meth-read">
-                    <img src="../images/audible-logotan-2x-200x66.png" alt="">
+                    <img src="../../images/audible-logotan-2x-200x66.png" alt="">
                 </div>
                 <div class="meth-read">
-                    <img src="../images/bb-logotan-2x-200x66.png" alt="">
+                    <img src="../../images/bb-logotan-2x-200x66.png" alt="">
                 </div>
                 <div class="meth-read">
-                    <img src="../images/kindlefire-logotan-2x-200x66.png" alt="">
+                    <img src="../../images/kindlefire-logotan-2x-200x66.png" alt="">
                 </div>
             
             </section>
@@ -122,8 +110,67 @@
 
         <!-- fourth section -->
             <section class="feedback">
+                <div class="critics">
 
-                
+                    <div class="tit-critics">
+                        
+                        <h2>What The Critics Say</h2>
+                        <h5>TESTIMONIALS FROM AROUND THE WORLD</h5>
+                    </div>
+                    <div class="btn">
+
+                        <button>Read All Testimonials</button>
+                    </div>
+                </div>
+                <div class="all-tweets">
+
+                    <div class="big-tweet">
+                        <div class="big-tw-text">
+                            <h1>
+                                Best author of his generation
+                            </h1>
+                            <hr>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, veniam neque, vel aut quae at esse quaerat atque, animi blanditiis sapiente harum culpa quis maiores voluptatibus accusamus aspernatur provident laudantium?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam illum sint repudiandae consequuntur qui facere ab sed enim non nulla laudantium ipsam, natus similique odio excepturi. Quod minus molestiae dignissimos?
+                            </p>
+                            <p>
+                                <b>
+                                    Mary Maxey, 
+                                </b> The New York Times
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="min-tweet">
+                        <div class="tweet">
+                            <div class="tweet-text">
+
+                                <h2>A True Masterpiece, Bravo!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum quaerat aspernatur quae atque dolorem tenetur corporis mollitia impedit. Ducimus nulla sed quam rem? Natus veritatis molestias asperiores dolores ut.</p>
+                            </div>
+                            <p>
+                                <b>
+                                    Gerald Hendley, 
+                                </b> The Guardian
+                            </p>
+                        </div>
+                        <div class="tweet">
+
+                            <div class="tweet-text">
+                                <h2>A Unique View On The World</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum quaerat aspernatur quae atque dolorem tenetur corporis mollitia impedit. Ducimus nulla sed quam rem? Natus veritatis molestias asperiores dolores ut.</p>
+                            </div>
+                                <p>
+                                    <b>
+                                        Mary Maxey, 
+                                    </b> The Globe And Mail
+                                </p>
+                        </div>
+                    </div>
+                </div>
             </section>            
 
 

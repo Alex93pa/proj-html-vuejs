@@ -7,13 +7,20 @@
   margin: auto;
 }
 
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 header {
-  background-image: url(../../images/hero-07-2x.jpg);
+  background-image: url(/images/hero-07-2x.jpg?337dda28520e416071acab37f5e67a99);
   height: 100vh;
   min-height: 600px;
   width: 100vw;
   max-width: 100%;
   background-size: cover;
+  position: relative;
 }
 header nav {
   display: flex;
@@ -44,42 +51,43 @@ header nav ul li a:hover {
   color: #e1aa40;
   border-top: 4px solid #e1aa40;
 }
-header .author-name {
-  width: 55%;
+header .hero {
+  display: flex;
+}
+header .hero .author-name {
+  flex: 1;
   display: inline-block;
   float: left;
   padding: 50px 100px;
 }
-header .author-name h1 {
+header .hero .author-name h1 {
   font-family: "Kristi", cursive;
   color: #e1aa40;
   font-size: 60px;
   font-weight: 500;
 }
-header .author-name p {
+header .hero .author-name p {
   color: white;
   font-size: 40px;
   font-family: "DM Serif Display", serif;
 }
-header .author-name .NYT {
+header .hero .author-name .NYT {
   font-family: "DM Sans", sans-serif;
   font-size: 35px;
 }
-header .buy {
-  width: 45%;
-  display: inline-block;
-  height: 300px;
+header .hero .buy {
+  flex: 1;
+  display: flex;
   background-color: white;
-  position: absolute;
-  bottom: 0;
+  flex-direction: row;
 }
-header .buy img {
+header .hero .buy img {
   display: inline;
 }
-header .buy .last-book {
+header .hero .buy .last-book {
   display: inline-block;
 }
-header .buy .last-book h3 {
+header .hero .buy .last-book h3 {
   color: #e1aa40;
 }
 
@@ -126,10 +134,14 @@ header .buy .last-book h3 {
 
 .banner {
   height: 500px;
-  background-image: url(../../images/banner.jpg);
+  background-image: url(/images/banner.jpg?9e8a273b65509c5cf524f11f03f6298c);
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .banner .banner-container {
-  width: 70%;
+  display: flex;
   margin: auto;
 }
 .banner .banner-container .audible-app {
@@ -137,7 +149,7 @@ header .buy .last-book h3 {
   display: inline-block;
 }
 .banner .banner-container .new-audio {
-  display: inline-block;
+  width: 45%;
 }
 .banner .banner-container .new-audio h2 {
   color: white;
@@ -145,7 +157,78 @@ header .buy .last-book h3 {
 }
 .banner .banner-container .new-audio h5 {
   color: #e1aa40;
+  margin: 35px 0;
 }
 .banner .banner-container .new-audio p {
   color: white;
+}
+.banner .banner-container .new-audio img {
+  margin: 10px;
+}
+
+.feedback {
+  height: 700px;
+  padding: 50px 100px;
+}
+.feedback .critics {
+  display: flex;
+}
+.feedback .critics .tit-critics {
+  margin: 0;
+  flex-grow: 1;
+}
+.feedback .critics .btn {
+  margin: 0 60px;
+}
+.feedback .critics .btn button {
+  padding: 10px;
+  background-color: #e1aa40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.feedback .critics .btn button:hover {
+  background-color: #f3b329;
+}
+.feedback .all-tweets {
+  display: flex;
+  padding: 30px 0;
+}
+.feedback .all-tweets .big-tweet {
+  height: 550px;
+  width: 50%;
+  margin: 0;
+  background-size: cover;
+  background-image: url(/images/testimonial2-2x.jpg?66cd7a14ff98d70a2fefbf4606bd2ce0);
+  border-bottom-right-radius: 85px;
+}
+.feedback .all-tweets .big-tweet .big-tw-text {
+  color: white;
+  padding: 25px;
+}
+.feedback .all-tweets .big-tweet .big-tw-text h1 {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  margin: 20px;
+}
+.feedback .all-tweets .big-tweet .big-tw-text p {
+  margin: 20px 0;
+}
+.feedback .all-tweets .big-tweet:hover {
+  transform: scale(1.1);
+  box-shadow: 100px rgba(0, 0, 0, 0.945);
+}
+.feedback .all-tweets .min-tweet {
+  width: 40%;
+  height: 550px;
+}
+.feedback .all-tweets .min-tweet .tweet {
+  margin: 0 0 30px 0;
+}
+.feedback .all-tweets .min-tweet .tweet .tweet-text {
+  background-color: #f3ece3;
+}
+.feedback .all-tweets .min-tweet .tweet .tweet-text p {
+  color: #bec6be;
 }

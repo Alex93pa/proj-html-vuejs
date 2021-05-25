@@ -4,7 +4,8 @@ header{
     min-height: 600px;
     width: 100vw;
     max-width: 100%;
-    background-size: cover;   
+    background-size: cover; 
+    position: relative;  
     nav{
         display: flex;
         .logo{
@@ -35,8 +36,10 @@ header{
             }
         }
     }
-    .author-name{
-        width: 55%;
+    .hero{
+        display: flex;
+        .author-name{
+        flex: 1;
         display: inline-block;
         float: left;
         padding: 50px 100px;
@@ -57,12 +60,12 @@ header{
         }
     }
     .buy{
-        width: 45%;
-        display: inline-block;
-        height: 300px;
+       flex: 1;
+        display: flex;
         background-color: white;
-        position: absolute;
-        bottom: 0;
+        // position: absolute;
+        // bottom: 0;
+        flex-direction: row;
         img{
             display: inline;
         }
@@ -73,4 +76,5 @@ header{
             }
         }
     }
+}
 }
