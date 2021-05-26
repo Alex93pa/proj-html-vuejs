@@ -129,3 +129,51 @@
 }
 
 // EIGHTH SECTION
+.recent{
+    background-color: $bg_section;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    .recent-header{
+        display: flex;
+        width: 85%;
+        .recent-tit{
+            flex-grow: 1;
+        }
+        button{
+            padding: 10px;
+            background-color: $primary_color;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            &:hover{
+                background-color: #f3b329;
+            }
+        }
+    }
+    .recent-card{
+        width: 85%;
+        display: flex;
+        .big-rec-card{
+            width: 68%;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+        .s-rec-card{
+            width: 28%;
+            background-color: white;
+            padding: 20px;
+            .s-card{
+                margin-top: 40px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

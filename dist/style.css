@@ -377,6 +377,55 @@ header .hero .buy .last-book button:hover {
   background-image: url(/images/box-3.jpg?4143f975695331b711704453f722c405);
 }
 
+.recent {
+  background-color: #f3ece3;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.recent .recent-header {
+  display: flex;
+  width: 85%;
+}
+.recent .recent-header .recent-tit {
+  flex-grow: 1;
+}
+.recent .recent-header button {
+  padding: 10px;
+  background-color: #e1aa40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.recent .recent-header button:hover {
+  background-color: #f3b329;
+}
+.recent .recent-card {
+  width: 85%;
+  display: flex;
+}
+.recent .recent-card .big-rec-card {
+  width: 68%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.recent .recent-card .big-rec-card img {
+  width: 100%;
+}
+.recent .recent-card .s-rec-card {
+  width: 28%;
+  background-color: white;
+  padding: 20px;
+}
+.recent .recent-card .s-rec-card .s-card {
+  margin-top: 40px;
+}
+.recent .recent-card .s-rec-card .s-card img {
+  width: 100%;
+}
+
 footer {
   background-image: url(/images/footer-3.jpg?598fdeb6c784cdc64b01f1fcc8220ef7);
   height: 500px;
