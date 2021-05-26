@@ -224,7 +224,7 @@ header .hero .buy .last-book button:hover {
 }
 .feedback .all-tweets .big-tweet:hover {
   transform: scale(1.1);
-  box-shadow: 100px rgba(0, 0, 0, 0.945);
+  box-shadow: 20px 20px 30px -10px #192824;
 }
 .feedback .all-tweets .min-tweet {
   width: 40%;
@@ -282,6 +282,7 @@ header .hero .buy .last-book button:hover {
   text-align: center;
   border-bottom: 1px solid;
   padding: 20px;
+  font-family: "DM Sans", sans-serif;
 }
 .events .event-list .event:hover {
   opacity: 0.6;
@@ -321,11 +322,59 @@ header .hero .buy .last-book button:hover {
   border-radius: 5px;
   color: white;
 }
-.newsletter .subscribe .inp-sub:hover {
+.newsletter .subscribe .inp-sub button:hover {
   background-color: #027986;
 }
 .newsletter .subscribe p {
   color: white;
+}
+
+.more {
+  padding: 50px;
+}
+.more .tit-more {
+  text-align: center;
+  margin: 20px;
+}
+.more .cards-more {
+  display: flex;
+  width: 85%;
+  height: 350px;
+}
+.more .cards-more .card {
+  width: 30%;
+  height: 350px;
+  background-size: cover;
+  border-bottom-right-radius: 70px;
+}
+.more .cards-more .card .card-text {
+  text-align: center;
+  position: relative;
+  top: 220px;
+}
+.more .cards-more .card .card-text h2 {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+.more .cards-more .card .card-text hr {
+  width: 20%;
+  margin: 20px auto;
+}
+.more .cards-more .card .card-text h5 {
+  color: #e1aa40;
+  font-family: "DM Sans", sans-serif;
+}
+.more .cards-more .card:hover {
+  box-shadow: 20px 20px 30px -10px #192824;
+}
+.more .cards-more .card1 {
+  background-image: url(/images/box-1.jpg?d1139ecceba9a8a9febb724b789c4551);
+}
+.more .cards-more .card2 {
+  background-image: url(/images/box-4.jpg?092a92297b2c9dd438ee3744378f0bf4);
+}
+.more .cards-more .card3 {
+  background-image: url(/images/box-3.jpg?4143f975695331b711704453f722c405);
 }
 
 footer {
@@ -350,4 +399,10 @@ footer div ul li {
 footer div ul li a {
   text-decoration: none;
   color: white;
+}
+footer div ul li a:hover {
+  color: #e1aa40;
+}
+footer div ul li:hover {
+  color: #e1aa40;
 }

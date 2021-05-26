@@ -16,8 +16,13 @@ footer{
                 a{
                     text-decoration: none;
                     color: white;
+                    &:hover{
+                        color: $primary_color;
+                    }
                 }
-                    
+                &:hover{
+                    color: $primary_color;
+                }   
             }
         }
     }

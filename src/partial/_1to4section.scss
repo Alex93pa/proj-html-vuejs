@@ -1,5 +1,4 @@
 // FIRST SECTION
-
 .about{
     padding: 50px 100px;
     .more-tit{
@@ -134,7 +133,7 @@
             }
         &:hover{
             transform: scale(1.1);
-            box-shadow: 100px rgba(0, 0, 0, 0.945);
+            box-shadow: 20px 20px 30px -10px #192824;
             
         }
     }
@@ -168,80 +167,3 @@
 }
 }
 
-// FIFTH SECTION
-.events{
-    padding: 50px;
-    background-color: $bg_section;
-    h1{
-        font-family: $p_font;
-        text-align: center;
-    }
-    h4{
-        color: $primary_color;
-        text-align: center;
-    }
-    .event-list{
-        width: 85%;
-        display: flex;
-        .event{
-            background-color: white;
-            margin: 10px;
-            padding: 15px;
-            img{
-                width: 100%;
-            }
-            h3{
-                text-align: center;
-                border-bottom:1px  solid;
-                padding: 20px;
-            }
-            &:hover{
-                opacity: 0.6;
-            }
-           
-
-        }
-    }
-}
-
-// SIXTH SECTION
-.newsletter{
-    background-image: url(../../images/banner-2.jpg);
-    .subscribe{
-        width: 30%;
-        margin: auto;
-        padding: 50px;
-        h1{
-            color: white;
-            font-family: $p_font;
-            text-align: center;
-        }
-        h4{
-            color: $primary_color;
-            text-align: center;
-            padding: 30px 0;
-        }
-        .inp-sub{
-            margin: auto;
-            padding: 10px 0;
-            input{
-                padding: 10px;
-                width: 45%;
-                border-radius: 5px;
-            }
-            button{
-                background-color: $button_color;
-                padding: 10px;
-                width: 45%;
-                border-radius: 5px;
-                color: white;
-            }
-            &:hover{
-                background-color: $button_color_hover;
-            }
-        }
-        p{
-            color: white;
-        }
-    }
-}
