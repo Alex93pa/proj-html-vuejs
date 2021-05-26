@@ -272,7 +272,7 @@ header .hero .buy .last-book button:hover {
 }
 .events .event-list .event {
   background-color: white;
-  margin: 5px;
+  margin: 10px;
   padding: 15px;
 }
 .events .event-list .event img {
@@ -282,6 +282,50 @@ header .hero .buy .last-book button:hover {
   text-align: center;
   border-bottom: 1px solid;
   padding: 20px;
+}
+.events .event-list .event:hover {
+  opacity: 0.6;
+}
+
+.newsletter {
+  background-image: url(/images/banner-2.jpg?fa4e09d951133ef10aa65bbe2e61c32e);
+}
+.newsletter .subscribe {
+  width: 30%;
+  margin: auto;
+  padding: 50px;
+}
+.newsletter .subscribe h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+}
+.newsletter .subscribe h4 {
+  color: #e1aa40;
+  text-align: center;
+  padding: 30px 0;
+}
+.newsletter .subscribe .inp-sub {
+  margin: auto;
+  padding: 10px 0;
+}
+.newsletter .subscribe .inp-sub input {
+  padding: 10px;
+  width: 45%;
+  border-radius: 5px;
+}
+.newsletter .subscribe .inp-sub button {
+  background-color: #3da698;
+  padding: 10px;
+  width: 45%;
+  border-radius: 5px;
+  color: white;
+}
+.newsletter .subscribe .inp-sub:hover {
+  background-color: #027986;
+}
+.newsletter .subscribe p {
+  color: white;
 }
 
 footer {

@@ -1,3 +1,5 @@
+// FIRST SECTION
+
 .about{
     padding: 50px 100px;
     .more-tit{
@@ -27,6 +29,7 @@
     }
 }
 
+// SECOND SECTION
 .read{
     background-color: $bg_section;
     padding: 0 50px;
@@ -38,6 +41,7 @@
     }
 }
 
+// THIRD SECTION
 .banner{
     height: 500px;
     background-image: url(../../images/banner.jpg);
@@ -72,6 +76,7 @@
     }
 }
 
+//FOURTH SECTION
 .feedback{
     padding: 50px 100px;
     .critics{
@@ -162,6 +167,8 @@
     }
 }
 }
+
+// FIFTH SECTION
 .events{
     padding: 50px;
     background-color: $bg_section;
@@ -178,7 +185,7 @@
         display: flex;
         .event{
             background-color: white;
-            margin: 5px;
+            margin: 10px;
             padding: 15px;
             img{
                 width: 100%;
@@ -188,7 +195,53 @@
                 border-bottom:1px  solid;
                 padding: 20px;
             }
+            &:hover{
+                opacity: 0.6;
+            }
+           
 
+        }
+    }
+}
+
+// SIXTH SECTION
+.newsletter{
+    background-image: url(../../images/banner-2.jpg);
+    .subscribe{
+        width: 30%;
+        margin: auto;
+        padding: 50px;
+        h1{
+            color: white;
+            font-family: $p_font;
+            text-align: center;
+        }
+        h4{
+            color: $primary_color;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .inp-sub{
+            margin: auto;
+            padding: 10px 0;
+            input{
+                padding: 10px;
+                width: 45%;
+                border-radius: 5px;
+            }
+            button{
+                background-color: $button_color;
+                padding: 10px;
+                width: 45%;
+                border-radius: 5px;
+                color: white;
+            }
+            &:hover{
+                background-color: $button_color_hover;
+            }
+        }
+        p{
+            color: white;
         }
     }
 }
