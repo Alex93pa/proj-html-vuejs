@@ -54,7 +54,6 @@ new Vue({
             text: "Visit My Foundation",
             link: "#",
         },
-    ]
-            
-        },
+    ]      
+    },
 })

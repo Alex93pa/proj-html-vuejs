@@ -195,13 +195,21 @@
                 </div>
                 <div class="event-list">
                     <div class="event">
-
+                        <img src="../../images/event-05-400x240.jpg" alt="">
+                        <h3>Chicago book Signing</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit ducimus, rem ratione praesentium quia laborum quas, odio dignissimos a fugiat doloremque. Quas laboriosam soluta, ipsa tempore non minus tenetur.</p>
                     </div>
                     <div class="event">
-                        
+                        <img src="../../images/event-04-400x240.jpg" alt="">
+                        <h3>Meet & Freet With Amanda</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit ducimus, rem ratione praesentium quia laborum quas, odio dignissimos a fugiat doloremque. Quas laboriosam soluta, ipsa tempore non minus tenetur.</p>
                     </div>
                     <div class="event">
-                        
+                        <img src="../../images/event-07-400x240.jpg" alt="">
+                        <h3>Open Book: Dialogues</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reprehenderit ducimus, rem ratione praesentium quia laborum quas, odio dignissimos a fugiat doloremque. Quas laboriosam soluta, ipsa tempore non minus tenetur.</p>
+                    </div>
+                </div>
                     </div>
                 </div>
             </section>
@@ -218,10 +226,10 @@
             <div class="footer-list">
                 <h3>USEFUL LINKS</h3>
                 <ul>
-                    <li v-for="text in footerLinks">
+                    <li v-for="el in footerLinks">
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        <a href="text.link" v-if="text.link">
-                             {{text.text}}</a>
+                        <a href="el.link" v-if="el.link">
+                             {{ el.text }}</a>
                     </li>
                 </ul>
             </div>
