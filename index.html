@@ -44,13 +44,19 @@
                     <p class="NYT">– The New York Times</p>
                 </div>
                 <div class="buy">
-                    <img src="images/book-widget.png" alt="">
-                    <div class="last-book">
-                        <h3>
-                            Latest Book Release
-                        </h3>
-                        <h5>D. VAUGHN AUTOBIOGRAPHY</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque incidunt quam dolor blanditiis a voluptate debitis. Rem quibusdam in totam at, assumenda debitis hic cum magnam porro vero consectetur.</p>
+                    <div class="last-book-info">
+
+                        <img src="images/book-widget.png" alt="">
+                        <div class="last-book">
+                            <h3>
+                                Latest Book Release
+                            </h3>
+                            <h5>D. VAUGHN AUTOBIOGRAPHY</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque incidunt quam dolor blanditiis a voluptate debitis. Rem quibusdam in totam at, assumenda debitis hic cum magnam porro vero consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="btn-buy">
+
                         <button>
                             <i class="fa fa-amazon" aria-hidden="true"></i>
                             <span> Buy on Amazon</span>
@@ -216,7 +222,7 @@
                     <h1>Subscribe To My Newsletter</h1>
                     <h4>BE NOTIFIED ABOUT BOOK SIGNING TOUR DATES</h4>
                     <div class="inp-sub">
-                        <input type="email" name="email" placeholder="Insert your E-mail...*">
+                        <input type="email" name="email" v-model="email" placeholder="Insert your E-mail...*">
                         <button v-on:click="submitBut">Subcribe</button>
                     </div>
                     <p>Donec frigilla nunc eu turpis dignissim, at cuismos sapiens tincidunt.</p>
@@ -304,10 +310,12 @@
         </main>
     <!-- FOOTER    -->
         <footer>
-            <div class="footer-list">
-                <img src="../../images/author-logo-round-200x205.png" alt="">
-            </div>
-            <div class="footer-list">
+            <div class="flex">
+
+                <div class="footer-list">
+                    <img src="../../images/author-logo-round-200x205.png" alt="">
+                </div>
+                <div class="footer-list">
                 <h3>ABOUT ME</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae a eveniet assumenda unde minus animi illum repellat iure. Autem voluptates atque perferendis provident doloremque repudiandae blanditiis culpa corrupti fuga.</p>
             </div>
@@ -318,7 +326,7 @@
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         <a href="el.link" v-if="el.link">
                              {{ el.text }}</a>
-                    </li>
+                            </li>
                 </ul>
             </div>
             <div class="footer-list">
@@ -327,9 +335,12 @@
                 <p>Phone: (800)000-0000</p>
                 <p>Mobile: (800)000-0000</p>
                 <p>E-mail: info@author.com</p>
-
             </div>
-
+        </div>
+            
+            <div class="copyright">
+                <p>© Copyright 2012 - 2021 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
+            </div>
 
             <!-- <div>
                 <h3>twitter</h3>
@@ -342,7 +353,15 @@
                 </ul>
             </div> -->
         </footer>
-        
+
+    <!-- FIXED      -->
+        <div class="d-fix fix">
+            <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="b-fix fix">
+            <p>39 €</p>
+            <p>On Sale</p>
+        </div>
     </div>
 
     <script src="script/script.js"></script>

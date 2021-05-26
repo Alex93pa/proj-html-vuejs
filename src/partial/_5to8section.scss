@@ -139,6 +139,7 @@
         width: 85%;
         .recent-tit{
             flex-grow: 1;
+            margin: 0 0 10px 0;
         }
         button{
             padding: 10px;
@@ -155,21 +156,22 @@
         width: 85%;
         display: flex;
         .big-rec-card{
-            width: 68%;
+            width: 69%;
             background-color: white;
             padding: 20px;
             display: flex;
             flex-direction: column;
+            margin: 0;
             img{
                 width: 100%;
             }
         }
         .s-rec-card{
-            width: 28%;
+            width: 30%;
             background-color: white;
             padding: 20px;
             .s-card{
-                margin-top: 40px;
+                margin-bottom: 30px;
                 img{
                     width: 100%;
                 }

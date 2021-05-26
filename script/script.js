@@ -57,8 +57,11 @@ new Vue({
     ]      
     },
     methods: {
-        submitBut: () => {
-            alert('Grazie per esserti registrato, riceverai una email appena ci saranno novità!')
+        submitBut: (email) => {
+            if(!email) {
+                alert ("inserisci la tua email per restare aggiornato")
+            }else
+                alert('Grazie per esserti registrato, riceverai una email appena ci saranno novità!')
         },
     }
 })

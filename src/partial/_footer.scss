@@ -1,10 +1,11 @@
 footer{
     background-image: url(../../images/footer-3.jpg);
-    height: 500px;
-    display: flex;
-    div{
-        width: 20%;
-        color: white;
+    .flex{
+        display: flex;
+        padding: 50px;
+        div{
+            width: 20%;
+            color: white;
         padding: 10px;
         p{
             margin: 15px 0;
@@ -25,5 +26,36 @@ footer{
                 }   
             }
         }
+    }
+    }
+    .copyright{
+        text-align: center;
+        color: white;
+    }
+}
+
+.fix{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #bec6be;
+    position: fixed;
+    right: 15px;
+}
+
+.d-fix{
+    top: 200px;
+    i{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.b-fix{
+    top: 280px;
+    p{
+        text-align: center;
     }
 }

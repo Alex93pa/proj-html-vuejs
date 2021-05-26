@@ -40,7 +40,6 @@ header{
         display: flex;
         .author-name{
         flex: 1;
-        display: inline-block;
         padding: 50px 100px;
         h1{
             font-family: $authorFont;
@@ -59,28 +58,35 @@ header{
         }
     }
     .buy{
-       flex: 1;
-        display: flex;
+        flex: 1;
         background-color: white;
+        padding: 15px;
         // position: absolute;
         // bottom: 0;
-        img{
-            display: inline;
-        }
-        .last-book{
-            display: inline-block;
-            h3{
-                color: $primary_color;
+        .last-book-info{
+            display: flex;
+
+            img{
+                display: inline;
             }
-            button{
-                padding: 10px 20px;
-                border-radius: 5px;
-                &:hover{
-                    background-color: #51bfc7;
-                    border: none;
+            .last-book{
+                display: inline-block;
+                h3{
+                    color: $primary_color;
+                }
+            }
+        }
+            .btn-buy{
+                display: flex;
+                button{
+                    padding: 10px 60px;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #51bfc7;
+                        border: none;
+                    }
                 }
             }
         }
     }
-}
 }
